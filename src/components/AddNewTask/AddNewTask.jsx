@@ -76,7 +76,7 @@ export const AddNewTask = () => {
                             <div className='taskCreatedBtns'>
                                 <button type='button' onClick={() => closeModalTaskCreated()} className='btnCloseModalTaskCreated'>Criar nova tarefa</button>
                                 <button className='btnReturnMenu'>
-                                    <Link to='/projeto-tarefas'>Voltar para o menu</Link>
+                                    <Link to='/'>Voltar para o menu</Link>
                                 </button>
 
                             </div>
@@ -105,7 +105,7 @@ export const AddNewTask = () => {
                         </div>
 
                         <div>
-                            <Link to='/projeto-tarefas'>
+                            <Link to='/'>
                                 <IoIosCloseCircle className='closeIcon' />
                             </Link>
                         </div>

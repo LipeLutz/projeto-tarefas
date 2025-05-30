@@ -37,7 +37,7 @@ export const Header = () => {
     return (
         <>
             <div className='header'>
-                <NavLink to="/projeto-tarefas" className="navLinkH1">
+                <NavLink to="/" className="navLinkH1">
                     Tarefas Andritz
                 </NavLink>
 

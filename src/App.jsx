@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter>
       <Header />
         <Routes>
-          <Route path='/projeto-tarefas' element={<Main />} />
+          <Route path='/' element={<Main />} />
           <Route path='/createtask' element={<AddNewTask />} />
           <Route path='/createAccount' element={<CreateAccount />} />
           <Route path='/myprofile' element={<MyProfile />} />

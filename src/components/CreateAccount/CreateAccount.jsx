@@ -100,7 +100,7 @@ export const CreateAccount = () =>{
                     <p>Um link de verificação foi enviado para o seu E-mail cadastrado, fazemos isso para garantirmos que você tem acesso ao E-mail cadastrado :)</p>
                 </div>
                 <button className='btnModalAccountCreated'>
-                    <Link to='/projeto-tarefas'>Voltar para o menu</Link>
+                    <Link to='/'>Voltar para o menu</Link>
                 </button>
             </dialog>
 
