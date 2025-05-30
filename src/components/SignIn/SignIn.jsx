@@ -89,7 +89,7 @@ export const SignIn = () => {
 
             <dialog className='modalLoginSuccess'>
                     <div className='divCloseIcon'>
-                        <Link to='/'>
+                        <Link to='/projeto-tarefas'>
                             <IoIosCloseCircle className='closeIcon' onClick={() => closeModalLoginSuccesss()} />
                         </Link>
                     </div>
