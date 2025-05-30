@@ -1,0 +1,352 @@
+#divOpenTasks {
+    width: 100%;
+    padding: 20px;
+    /* background-color: white; */
+}
+
+#divOpenTasks h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.noTasksPending {
+    margin: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
+}
+
+.openTasks {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px black;
+    /* padding: 10px 0px; */
+    margin: 20px;
+}
+
+.modalFinishTask {
+    width: 40%;
+    height: 200px;
+
+    margin-bottom: 20px;
+
+    background-color: white;
+    color: #000;
+
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    border: none;
+    border-radius: 20px;
+
+    top: 40%;
+    left: 30%;
+}
+
+.modalFinishTask::backdrop {
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.divModalFinishTask {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.areYouSure {
+    font-size: 1.7rem;
+}
+
+.spanObs {
+    color: red;
+    font-size: 1.3rem;
+}
+
+.modalFinishTaskBtns {
+    margin-top: 20px;
+}
+
+.btnFinishTask {
+    width: 150px;
+    height: 40px;
+
+    margin-right: 40px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1.2rem;
+    background-color: green;
+    cursor: pointer;
+}
+
+.btnCancel {
+    width: 150px;
+    height: 40px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1.2rem;
+    background-color: red;
+    cursor: pointer;
+}
+
+.modalEditTask {
+    width: 30%;
+    height: 500px;
+
+
+    background-color: white;
+    color: #000;
+
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    border: none;
+    border-radius: 20px;
+
+    top: 30%;
+    left: 36%;
+}
+
+.modalEditTask::backdrop {
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.divEditTaskOptions {
+    width: 100%;
+    height: 85%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divEditTaskOptions button {
+    width: 300px;
+    height: 45px;
+
+    margin-bottom: 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #0872B3;
+
+    font-size: 1.2rem;
+
+    cursor: pointer;    
+}
+
+.divModalEditTaskBtnCancel{
+    text-align: center;
+}
+
+.modalDeleteTask {
+    width: 40%;
+    height: 200px;
+
+    background-color: white;
+    color: #000;
+
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    border: none;
+    border-radius: 20px;
+
+    top: 40%;
+    left: 30%;
+}
+
+.modalDeleteTask::backdrop {
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+
+.modalNotAutenticated {
+
+    padding: 30px;
+
+    background-color: white;
+    color: #000;
+
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    border: none;
+    border-radius: 10px;
+
+    top: 44%;
+    left: 36%;
+}
+
+.modalNotAutenticated::backdrop {
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+
+.modalNotAutenticatedBtns {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.btnAutenticate {
+    width: 100px;
+    height: 40px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+
+    border: none;
+    text-align: center;
+    padding: 4px 0px 0px 0px;
+
+    border-radius: 5px;
+    background-color: #0872B3;
+}
+
+.btnCancelAutentication {
+    width: 100px;
+    height: 40px;
+
+    font-size: 1.3rem;
+    text-align: center;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: rgba(255, 0, 0, 0.87);
+
+    cursor: pointer;
+}
+
+.modalDiferentUser {
+    padding: 30px;
+
+    background-color: white;
+    color: #000;
+
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    border: none;
+    border-radius: 10px;
+
+    text-align: center;
+
+    top: 44%;
+    left: 36%;
+
+}
+
+.modalDiferentUser::backdrop {
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.btnModalDiferentUser {
+    width: 100px;
+    height: 40px;
+
+    margin-top: 20px;
+
+    font-size: 1.3rem;
+    text-align: center;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: rgba(255, 0, 0, 0.87);
+
+    cursor: pointer;
+}
+
+
+.openTasksTitle {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.openTasksTitleH3 {
+    max-width: 80%;
+    line-break: anywhere;
+}
+
+.openTasksTitle p {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid black;
+    padding-left: 5px;
+    font-size: 1.1rem;
+}
+
+.divOpenTaskBox {
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+}
+
+.openTaskBox {
+    width: 80%;
+    line-height: 40px;
+}
+
+.openTaskBoxDescription {
+    line-break: anywhere;
+}
+
+.openTasksFunctions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.finishTask {
+    width: 100px;
+    padding: 2px;
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.finishTask svg {
+    width: 26px;
+    height: 25px;
+}
+
+.changeTask {
+    width: 100px;
+    height: 27px;
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.changeTask svg {
+    width: 26px;
+    height: 25px;
+}
+
+.deleteTask {
+    width: 100px;
+    height: 27px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.deleteTask svg {
+    width: 26px;
+    height: 17px;
+}

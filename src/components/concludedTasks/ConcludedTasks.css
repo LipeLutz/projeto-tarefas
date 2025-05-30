@@ -1,0 +1,43 @@
+#divConcludedTasks {
+    width: 100%;
+
+    padding: 20px;
+}
+
+#divConcludedTasks h2 {
+    font-size: 2.5rem;
+
+    text-align: center;
+}
+
+.noTasksConcluded {
+    margin: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.5rem;
+}
+
+.concludedTasks {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px black;
+    padding: 10px 0px;
+    margin: 20px;
+}
+
+.concludedTasksTitle {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.concludedTasksBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 40px;
+    padding: 0px 0px 0px 10px;
+}

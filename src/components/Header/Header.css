@@ -1,0 +1,115 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 50px 0px 50px;
+  padding: 40px;
+}
+
+.navLinkH1 {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 3em;
+  line-height: 1.1;
+  color-scheme: light dark;
+  color: white;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  padding: 10px;
+}
+
+.divProfileIcons{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.profileIcon {
+  width: 50px;
+  height: 50px;
+
+  color: white;
+  cursor: pointer;
+
+  position: relative;
+  top: 4px;
+}
+
+.createAccountIcon {
+  width: 50px;
+  height: 50px;
+
+  color: white;
+  cursor: pointer;
+
+}
+
+.logOutIcon {
+  width: 50px;
+  height: 50px;
+
+  color: white;
+  cursor: pointer;
+}
+
+.modalLogOut {
+  font-size: 1.6rem;
+  padding: 30px;
+
+  background-color: white;
+  color: #000;
+
+  box-shadow: 0 0 1em rgb(0 0 0 / .3);
+  border: none;
+  border-radius: 10px;
+
+  top: 41%;
+  left: 43%;
+}
+
+.modalLogOut::backdrop{
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.btnsModalLogOut{
+  margin-top: 30px;
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnLogOut {
+  width: 40%;
+
+  margin-right: 20px;
+
+  background-color: red;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+
+  font-size: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnCloseModalLogout {
+  width: 40%;
+  background-color: green;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
