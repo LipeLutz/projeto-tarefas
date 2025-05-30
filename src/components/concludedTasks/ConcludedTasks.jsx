@@ -1,4 +1,4 @@
-import './concludedTasks.css'
+import './ConcludedTasks.css'
 
 import { useEffect, useState } from "react"
 import { collection, getDocs } from "firebase/firestore"
