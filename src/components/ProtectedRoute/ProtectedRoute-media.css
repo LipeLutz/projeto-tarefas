@@ -1,0 +1,43 @@
+@media (max-width: 1024px) {
+  .protectedRoute {
+    width: 70%;
+  }
+
+  .divOptionsProtectedRoute {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .divSignInProtectedRoute {
+    border-right: none;
+    border-right: 1px solid black;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .protectedRoute {
+    width: 90%;
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .protectedRoute h1{
+    font-size: 1.7rem;
+  }
+
+  .divProtectedRoute {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .loginLink,
+  .createAccountLink {
+    font-size: 1rem;
+  }
+
+  .divSignInProtectedRoute,
+  .divCreateAccountProtectedRoute {
+    padding: 5px;
+  }
+}

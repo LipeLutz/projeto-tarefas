@@ -1,4 +1,5 @@
 import './Header.css'
+import './HeaderMedia.css'
 
 import { signOut } from 'firebase/auth';
 import { auth } from '../../config/firebase';
@@ -9,7 +10,6 @@ import { IoIosLogOut } from "react-icons/io";
 
 import { Link, NavLink } from "react-router-dom";
 import { useAuth } from '../../Hooks/useAuthentication';
-import { div } from 'framer-motion/m';
 
 export const Header = () => {
 

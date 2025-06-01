@@ -1,5 +1,6 @@
+import './CreateAccount.css';
+import './CreateAccount-media.css'
 import { useState } from 'react';
-import './CreateAccount.css'
 
 import { LuEye, LuEyeClosed } from "react-icons/lu";
 import { IoIosCloseCircle } from "react-icons/io";

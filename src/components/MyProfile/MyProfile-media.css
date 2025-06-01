@@ -1,0 +1,121 @@
+/* myProfile-media.css */
+
+/* Até 1024px (notebooks/tablets grandes) */
+@media (max-width: 1024px) {
+  .myProfile {
+    width: 50%;
+  }
+
+  .modalChangePassword {
+    width: 60%;
+    left: 20%;
+  }
+
+  .modalEmailSent {
+    width: 70%;
+    left: 15%;
+  }
+}
+
+/* Até 768px (tablets) */
+@media (max-width: 768px) {
+  .myProfile {
+    width: 85%;
+    padding: 25px;
+  }
+
+  .myProfile h1 {
+    font-size: 1.8rem;
+  }
+
+  .divChangeUserName,
+  .divUserEmail,
+  .divChangePassword {
+    font-size: 1.2rem;
+    gap: 10px;
+  }
+
+  .changeInfo {
+    width: 28px;
+    height: 25px;
+  }
+
+  .modalChangePassword {
+    width: 80%;
+    font-size: 1.4rem;
+    left: 10%;
+  }
+
+  .modalEmailSent {
+    width: 85%;
+    font-size: 1.2rem;
+    left: 7.5%;
+    padding: 25px;
+  }
+
+  .btnCancelModalEmailSent,
+  .btnChangePassword,
+  .btnCancelChangePassword {
+    width: 45%;
+    font-size: 1rem;
+  }
+}
+
+/* Até 480px (celulares) */
+@media (max-width: 480px) {
+  .divMyProfile {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .myProfile {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .myProfile h1 {
+    font-size: 1.5rem;
+  }
+
+  .divChangeUserName,
+  .divUserEmail,
+  .divChangePassword {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .changeInfo {
+    width: 25px;
+    height: 22px;
+  }
+
+  .modalChangePassword {
+    width: 90%;
+    font-size: 1.1rem;
+    left: 5%;
+    top: 35%;
+    padding: 20px;
+  }
+
+  .modalEmailSent {
+    width: 90%;
+    font-size: 1rem;
+    left: 5%;
+    top: 35%;
+    padding: 20px;
+  }
+
+  .btnsModalChangePassword {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btnChangePassword,
+  .btnCancelChangePassword,
+  .btnCancelModalEmailSent {
+    width: 100%;
+    font-size: 1rem;
+    height: 38px;
+  }
+}

@@ -1,68 +1,68 @@
 .divMyProfile {
-    width: 100vw;
-    height: 71vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 71vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .myProfile {
-    width: 30%;
+  width: 30%;
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
-    padding: 20px;
+  padding: 20px;
 
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
-.myProfile h1{
-    text-align: center;
-    
+.myProfile h1 {
+  text-align: center;
+
 }
 
-.divChangeUserName{
-    display: flex;
-    font-size: 1.3rem;
+.divChangeUserName {
+  display: flex;
+  font-size: 1.3rem;
 
-    margin: 30px 0px 40px 0px;
+  margin: 30px 0px 40px 0px;
 }
 
 .divChangeUserName p {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
-.divUserEmail{
-    font-size: 1.3rem;
+.divUserEmail {
+  font-size: 1.3rem;
 
 }
 
-.divChangePassword{
-    display: flex;
-    font-size: 1.3rem;
+.divChangePassword {
+  display: flex;
+  font-size: 1.3rem;
 
-    margin: 40px 0px 40px 0px;
+  margin: 40px 0px 40px 0px;
 }
 
 .divChangePassword p {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .changeInfo {
-    height: 25px;
-    width: 30px;
+  height: 25px;
+  width: 30px;
 
-    background-color: white;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.651);
+  background-color: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.651);
 
-    border-radius: 5px;
+  border-radius: 5px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .modalChangePassword {
@@ -78,15 +78,24 @@
 
   top: 40%;
   left: 36%;
+
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
 }
 
-.modalChangePassword::backdrop{
+.modalChangePassword[open] {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modalChangePassword::backdrop {
   background-color: rgba(0, 0, 0, 0.507);
 }
 
-.btnsModalChangePassword{
+.btnsModalChangePassword {
   margin-top: 30px;
-   
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,11 +142,11 @@
   left: 29%;
 }
 
-.modalEmailSent::backdrop{
+.modalEmailSent::backdrop {
   background-color: rgba(0, 0, 0, 0.507);
 }
 
-.btnCancelModalEmailSent{
+.btnCancelModalEmailSent {
   width: 30%;
   background-color: red;
   height: 40px;

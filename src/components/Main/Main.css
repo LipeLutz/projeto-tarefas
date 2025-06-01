@@ -15,12 +15,11 @@
 }
 
 .menuOptions{
-    width: 30%;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    position: static;
-    border-right: 1px solid white;
+    border-right: 1px solid white ;
 }
 
 .menuOptions button{
@@ -34,7 +33,7 @@
 }
 
 .menuOptions button:hover{
-    background-color: #014068;
+    background-color: rgba(255, 255, 255, 0.164);
     transition: 0.5s;
 }
 
@@ -67,12 +66,3 @@
     cursor: pointer;
     transition: border-color 0.25s;
 }
-
-/* .btnCreateTask:hover {
-    border-color: #646cff;
-}
-
-.btnCreateTask:focus,
-.btnCreateTask:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-} */

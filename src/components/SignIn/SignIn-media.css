@@ -1,0 +1,58 @@
+@media (max-width: 1024px) {
+  .divLogin {
+    width: 70%;
+  }
+
+  .divPassword input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .divLogin {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .formLogin {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .divLogin label {
+    font-size: 1.2rem;
+  }
+
+  .divLogin input {
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .showPassword {
+    width: 30px;
+    height: 40px;
+  }
+
+  .btnLogin {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .divNAAccount {
+    gap: 5px;
+    font-size: 1rem;
+  }
+
+  .modalLoginNotFound,
+  .modalLoginSuccess {
+    width: 90%;
+    left: 5%;
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+
+  .divCloseIcon svg {
+    width: 30px;
+    height: 30px;
+  }
+}

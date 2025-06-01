@@ -1,6 +1,8 @@
+import './MyProfile.css'
+import './MyProfile-media.css'
+
 import { getAuth, sendPasswordResetEmail } from 'firebase/auth';
 import { useAuth } from '../../Hooks/useAuthentication';
-import './MyProfile.css'
 import { TiPencil } from "react-icons/ti";
 
 export const MyProfile = () =>{

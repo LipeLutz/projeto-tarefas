@@ -1,0 +1,53 @@
+@media (max-width: 1024px) {
+  .hamburgerBtnOpen {
+    width: 100%;
+    padding: 10px;
+
+    background-color: #014068;
+    border: none;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+
+    color: white;
+    cursor: pointer;
+  }
+
+  .hamburgerBtnOpen:hover {
+    background-color: rgba(255, 255, 255, 0.164);
+    transition: 0.5s;
+  }
+
+  .hamburgerBtnClosed {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .hamburgerBtnClosed:hover {
+    background-color: #014068;
+    transition: 0.5s;
+  }
+
+  .menuOptions {
+    background-color: #014068;
+    width: 100%;
+    height: calc(100vh - 80px);
+    z-index: 999;
+  }
+
+}
+
+.closeBtnContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.closeBtn {
+  cursor: pointer;
+}
