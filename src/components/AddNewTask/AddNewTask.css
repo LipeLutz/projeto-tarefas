@@ -5,6 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin-top: 30px;
 }
 
 .modalTaskCreated{
@@ -20,6 +22,10 @@
 
     top: 40%;
     left: 30%;
+}
+
+.modalTaskCreated::backdrop{
+  background-color: rgba(0, 0, 0, 0.507);
 }
 
 .divModalTaskCreated{

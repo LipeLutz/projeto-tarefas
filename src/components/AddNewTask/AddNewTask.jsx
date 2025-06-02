@@ -14,7 +14,7 @@ export const AddNewTask = () => {
 
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
-    const [priority, setPriority] = useState('')
+    const [priority, setPriority] = useState('Baixa')
     const [emailVerified, setEmailVerified] = useState()
 
     const taskCollectionRef = collection(db, "tasks")
@@ -35,7 +35,7 @@ export const AddNewTask = () => {
 
             const modal = document.querySelector(".modalTaskCreated")
 
-            modal.show()
+            modal.showModal()
 
         } catch (error) {
             console.log(error)

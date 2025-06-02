@@ -19,7 +19,7 @@
 
   .hamburgerBtnClosed {
     padding: 5px;
-    margin: 10px;
+    margin: 10px 0px 10px 10px;
     border-radius: 10px;
 
     background: transparent;
@@ -34,20 +34,13 @@
   }
 
   .menuOptions {
+    width: 100vw;
     background-color: #014068;
-    width: 100%;
-    height: calc(100vh - 80px);
     z-index: 999;
+    overflow-y: hidden;
   }
 
-}
-
-.closeBtnContainer {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-}
-
-.closeBtn {
-  cursor: pointer;
+  .menuTasksBlocked {
+    display: none;
+  }
 }

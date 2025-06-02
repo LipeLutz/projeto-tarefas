@@ -1,4 +1,5 @@
 import './OpenTasks.css'
+import './OpenTasks-media.css'
 
 import { useAuth } from '../../Hooks/useAuthentication';
 import { db } from '../../config/firebase';
@@ -190,7 +191,7 @@ export const OpenTasks = () =>{
     return(
         <div id='divOpenTasks'>
                     <h2>Tarefas em aberto</h2>
-                    {taskList.length === 0 ? <div className='noTasksPending'> <p>Nenhuma tarefa pendente :)</p> </div> : taskList.map((list, index) => (
+                    {taskList.length === 0 ? <div className='noTasksPending'> <p>Nenhuma tarefa pendente</p> </div> : taskList.map((list) => (
                         <div className='openTasks' key={list.id}>
                             <dialog className='modalFinishTask'>
                                 <div className='divModalFinishTask'>
@@ -247,7 +248,6 @@ export const OpenTasks = () =>{
 
                             <div className='openTasksTitle'>
                                 <h3 className='openTasksTitleH3'>{list.title}</h3>
-                                <p>Status: {list.status}</p>
                             </div>
                             <hr />
                             <div className='divOpenTaskBox'>
@@ -255,6 +255,7 @@ export const OpenTasks = () =>{
                                     <p className='openTaskBoxDescription'><strong>Descrição</strong>: {list.description}</p>
                                     <p><strong>Prioridade</strong>: {list.priority}</p>
                                     <p><strong>Criado por</strong>: {list.createdBy}</p>
+                                    <p className='taskStatus'><strong>Status</strong>: {list.status}</p>
                                 </div>
 
                                 <div className='openTasksFunctions'>

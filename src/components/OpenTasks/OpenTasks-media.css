@@ -1,0 +1,81 @@
+@media (max-width: 1024px) {
+  #divOpenTasks {
+    padding: 15px;
+  }
+
+  #divOpenTasks h2 {
+    font-size: 2rem;
+  }
+
+  .openTasks {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .noTasksPending{
+    width: 80%;
+  }
+
+  .divOpenTaskBox {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .openTaskBox {
+    width: 100%;
+  }
+
+  .openTasksFunctions {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .finishTask,
+  .changeTask,
+  .deleteTask {
+    width: 70px;
+    height: 40px;
+    padding: 0;
+  }
+
+  .finishTask svg,
+  .changeTask svg,
+  .deleteTask svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modalFinishTask,
+  .modalDeleteTask {
+    width: 90%;
+    top: 35%;
+    left: 5%;
+  }
+
+  .modalEditTask {
+    width: 90%;
+    top: 12%;
+    left: 5%;
+  }
+
+  .modalNotAutenticated,
+  .modalDiferentUser {
+    width: 90% !important;
+    top: 30% !important;
+    left: 5% !important;
+  }
+
+  .divEditTaskOptions button {
+    width: 80% !important;
+    font-size: 1.3rem;
+  }
+
+  .openTasksTitleH3{
+    flex-wrap: wrap ;
+    font-size: 1.1rem;
+  }
+}

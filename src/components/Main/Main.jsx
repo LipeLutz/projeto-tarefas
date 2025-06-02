@@ -7,19 +7,23 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { useAuth } from '../../Hooks/useAuthentication';
 
-export const Main = ({ user }) => {
+export const Main = () => {
   const [visible, setVisible] = useState('pendent');
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
   const [showMenu, setShowMenu] = useState(false);
+
+  const { user } = useAuth()
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 1024);
     };
     window.addEventListener('resize', handleResize);
+    setShowMenu(false)
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [isMobile]);
 
   return (
     <div className='mainMenu'>
@@ -47,7 +51,7 @@ export const Main = ({ user }) => {
           )}
         </div>
 
-        <div className='optionChoosed'>
+        <div className={showMenu ? 'menuTasksBlocked' : 'optionChoosed'}>
           <AnimatePresence mode="wait">
             {visible === "pendent" && (
               <motion.div

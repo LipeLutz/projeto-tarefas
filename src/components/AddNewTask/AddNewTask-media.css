@@ -25,13 +25,18 @@
   .areYouSure {
     font-size: 1.5rem;
   }
+
+  .modalUserNotVerified {
+    width: 70%;
+    padding: 15px;
+    font-size: 0.95rem;
+  }
 }
 
 /* Tablets e celulares grandes */
 @media (max-width: 768px) {
   .divCreateNewTask {
     height: auto;
-    padding: 20px 0;
   }
 
   .createNewTask {
@@ -50,24 +55,28 @@
     font-size: 1rem;
   }
 
-  .btnCloseModalTaskCreated,
-  .btnReturnMenu {
-    width: 120px;
-    margin-right: 20px;
-    font-size: 1rem;
+  .modalTaskCreated {
+    width: 80%;
+    left: 10%;
+    top: 35%;
   }
 
-  .modalTaskCreated {
-    width: 70%;
-    left: 15%;
-    top: 35%;
-    height: auto;
-    padding: 20px;
+  .btnCloseModalTaskCreated,
+  .btnReturnMenu {
+    width: 150px;
+    margin-right: 20px;
+    font-size: 1rem;
   }
 
   .closeIcon {
     width: 25px;
     height: 25px;
+  }
+
+  .modalUserNotVerified {
+    width: 70%;
+    padding: 15px;
+    font-size: 0.95rem;
   }
 }
 
@@ -112,6 +121,7 @@
   }
 
   .modalUserNotVerified {
+    width: 70%;
     padding: 15px;
     font-size: 0.95rem;
   }
